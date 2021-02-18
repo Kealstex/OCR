@@ -5,554 +5,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <title>OCR</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="promo">
-        <div class="container">
-            <header class="header">
-                <a href="#" class="header__logo">
-                    <img src="icons/logo.png" alt="logo">
-                </a>
-                <div class="header__official">
-                    официальный педставитель
-                    <span>Garmin, Polar, Suunto</span>
+    <section class="skewed-bottom-right">
+        <nav class="relative px-6 py-6 flex justify-between items-center bg-gray-50">
+            <a class="text-3xl font-bold leading-none" href="#">
+                <img class="h-12" src="img/logo/logo.svg" alt="logo" width="auto"></a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-gray-400 p-3" onclick="showMenu()">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul
+                class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Start</a></li>
+                <li class="text-gray-800">
+                    <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a class="text-sm text-blue-600 font-bold" href="#">About Us</a></li>
+                <li class="text-gray-800">
+                    <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Services</a></li>
+                <li class="text-gray-800">
+                    <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z">
+                        </path>
+                    </svg>
+                </li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Platform</a></li>
+            </ul>
+            <a class="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-blue-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
+                href="#">Contact Us</a>
+        </nav>
+        <div class="bg-gray-50 pt-12 lg:pt-20 pb-20 radius-for-skewed">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
+                        <div class="w-full text-center lg:text-left">
+                            <div class="max-w-md mx-auto lg:mx-0">
+                                <h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading">
+                                    <span>Header</span><span class="text-blue-600">1</span>
+                                </h2>
+                            </div>
+                            <div class="max-w-sm mx-auto lg:mx-0">
+                                <p class="mb-6 text-gray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+                                <div>
+                                    <a class="btn-h1 w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded transition duration-200"
+                                        href="#">How it works</a>
+                                </div>
+
+                            </div>
+
+
+                            <a class="btn-h1 btn-h1-accent mb-3 lg:mb-0 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 text-white font-semibold"
+                                href="#">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
+                        <div class="relative" style="z-index: 0;">
+
+                            <!--основное изображение тут-->
+                            <div class="img-ocr">
+                                <!-- <img class="" src="img/Details.png" alt=""> -->
+
+                                <canvas class="dropzone d-none" id="canvas1"></canvas>
+                                <!-- <button class="input-file cursor-pointer">
+                                        <input class="cursor-pointer" type="file" multiple="false" id="imageOCR"
+                                            onchange="upload()">
+                                        <span class="cursor-pointer">
+                                            Choose file...
+                                        </span>
+                                    </button> -->
+                                <div class="drag-and-drop">
+                                    <div class="space-y-1 text-center">
+                                        <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
+                                            viewBox="0 0 48 48" aria-hidden="true">
+                                            <path
+                                                d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <div class="flex justify-center text-sm text-gray-600">
+                                            <label for="imageOCR"
+                                                class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                                <span class="text-blue-600 uppercase underline">Upload a file</span>
+                                                <input name="file-upload" type="file" multiple="false" class="sr-only"
+                                                    id="imageOCR" onchange="upload()">
+                                            </label>
+                                            <p class="pl-1">or drag and drop</p>
+                                        </div>
+                                        <div>
+                                            <label for="company_website" class="block text-sm text-gray-600 mt-2">
+                                                or upload by url
+                                            </label>
+                                            <div class="mt-1 flex rounded-md shadow-sm">
+                                                <span
+                                                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-lg">
+                                                    http://
+                                                </span>
+                                                <input type="text" name="company_website" id="company_website"
+                                                    class="focus:ring-indigo-500 focus:border-indigo-500 p-1 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border border-gray-300"
+                                                    placeholder="www.example.com">
+                                            </div>
+                                        </div>
+                                        <p class="text-xs text-gray-500">
+                                            PNG, JPG, GIF up to 10MB
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--фон-->
+                            <img class="hidden md:block absolute" style="top:-2rem; right: 3rem; z-index: -1;"
+                                src="img/green-dark-up.svg" alt="">
+                            <img class="hidden md:block absolute" style="bottom:-2rem; right: -2rem; z-index: -1;"
+                                src="img/wing-green-down.svg" alt="">
+                            <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1;"
+                                src="img/bullets-gray-right.svg" alt="">
+                            <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1;"
+                                src="img/bullets-gray-left.svg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="header__contacts">
-                    <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button data-modal="consultation" class="button">
-                        заказать звонок
+            </div>
+        </div>
+        <div class="mr-for-radius">
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+            </svg>
+        </div>
+
+        <!-- TODO mobile menu-->
+        <div class="hidden navbar-menu relative z-50" id="mobile-menu">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <img class="h-10" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto"></a>
+                    <button class="navbar-close" onclick="showMenu()">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
                     </button>
                 </div>
-            </header>
-
-            <div class="promo__wrapper">
-                <h1 class="promo__header">Подбор пульсометра</h1>
-                <h2 class="promo__subheader">с учётом вашего уровня подготовки</h2>
-                <div class="promo__icons">
-                    <div class="promo__icon">
-                        <img src="icons/main_screen/timer.png" alt="timer">
-                        Время подбора:
-                        10 минут
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/main_screen/hand-cart.png" alt="hand-cart">
-                        Бесплатная
-                        доставка
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/main_screen/messages.png" alt="messages">
-                        Ответим
-                        на все вопросы
-                    </div>
-
-
-                </div>
-
-                <button data-modal="consultation" class="button button_main">заказать консультацию</button>
-
-                <div class="promo__link">
-                    или <a href="">перейти в каталог</a>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="advantages">
-        <div class="container">
-            <h2 class="title">
-                наши преимущества
-            </h2>
-
-            <div class="advantages__wrapper">
-                <div class="advantages__icon"><img src="icons/advantages/cup.png" alt="cup">
-                    <div class="advantages__subtitle">
-                        Делимся опытом
-                    </div>
-                    <div class="advantages__descr">
-                        Наши сотрудники всегда готовы поделиться своим опытом,
-                        так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
-                    </div>
-                </div>
-                <div class="advantages__icon">
-                    <img src="icons/advantages/heart.png" alt="heart">
-                    <div class="advantages__subtitle">
-                        Заботимя о здоровье
-                    </div>
-                    <div class="advantages__descr">
-                        Мы работаем для того,
-                        чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
-                    </div>
-                </div>
-                <div class="advantages__icon"><img src="icons/advantages/shoe.png" alt="shoe">
-                    <div class="advantages__subtitle">
-                        Учим бегать
-                    </div>
-                    <div class="advantages__descr">
-                        Помогаем с обучением правильной техники бега! Дружим с крупнейшей школой бега в России - <a
-                            href="">i love running</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="consultation">
-        <div class="container">
-            <h2 class="title title_left">
-                Получите бесплатную консультацию <br> По подбору пульсометра
-            </h2>
-
-            <div class="consultation__descr">
-                Просто заполните форму заявки <br>
-                и мы перезвоним Вам в течении 10 минут
-            </div>
-
-            <form id="consultation-form" class="feed-form" action="#" method="GET">
-
-                <input name="name" minlength="1" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-
-                <button class="button button_submit">заказать консультацию</button>
-            </form>
-        </div>
-    </div>
-
-    <section class="carousel">
-        <div class="container">
-            <div class="carousel__inner">
                 <div>
-                    <img src="img/slide_1.jpg" alt="slide">
+                    <ul>
+                        <li class="mb-1"><a class="block p-4 text-sm" href="#">Start</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm" href="#">About Us</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm" href="#">Services</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm" href="#">Platform</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <img src="img/slide_2.jpg" alt="slide">
+                <div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 rounded-l-xl rounded-t-xl"
+                            href="#">Contact us</a>
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                        <span>© 2020 All rights reserved.</span>
+                    </p>
+                    <div class="text-center"><a class="inline-block px-1" href="#">
+                            <img src="atis-assets/social/facebook.svg" alt=""></a><a class="inline-block px-1" href="#">
+                            <img src="atis-assets/social/twitter.svg" alt=""></a><a class="inline-block px-1" href="#">
+                            <img src="atis-assets/social/instagram.svg" alt=""></a></div>
                 </div>
-                <div>
-                    <img src="img/slide_3.jpg" alt="slide">
-                </div>
-            </div>
+            </nav>
         </div>
     </section>
 
-    <section class="catalog">
-        <div class="container">
-            <h2 class="title title_top">Каталог пульсометров</h2>
-            <ul class="catalog__tabs">
-                <li class="catalog__tab catalog__tab_active">
-                    <div>для фитнеса</div>
-                </li>
-                <li class="catalog__tab">
-                    <div>для бега</div>
-                </li>
-                <li class="catalog__tab">
-                    <div>для триатлона</div>
-                </li>
-            </ul>
-
-            <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar DST1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
+    <section>
+        <div class="skew skew-top mr-for-radius">
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
+            </svg>
+        </div>
+        <div class="skew skew-top ml-for-radius">
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+            </svg>
+        </div>
+        <div class="py-20 bg-gray-50 radius-for-skewed">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                        <div class="max-w-md lg:mx-auto">
+                            <h2 class="my-2 text-4xl lg:text-5xl font-bold font-heading">Header 2</h2>
+                            <p class="mb-6 text-gray-500 leading-loose">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+                            <ul class="text-gray-500 font-bold">
+                                <li class="flex mb-4">
+                                    <svg class="mr-2 w-6 h-6 text-blue-400" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.</span>
+                                </li>
+                                <li class="flex mb-4">
+                                    <svg class="mr-2 w-6 h-6 text-blue-400" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.</span>
+                                </li>
+                                <li class="flex mb-4">
+                                    <svg class="mr-2 w-6 h-6 text-blue-400" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-wrap -mx-4">
+                        <div class="mb-8 lg:mb-0 w-full md:w-1/2 px-4">
+                            <div class="mb-8 py-6 pl-6 pr-4 shadow rounded bg-white">
+                                <span class="mb-4 inline-block p-3 rounded-lg bg-blue-400">
+                                    <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <h4 class="mb-2 text-2xl font-bold font-heading">Lorem ipsum dolor sit amet</h4>
+                                <p class="text-gray-500 leading-loose">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
                             </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar asFT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
+                            <div class="py-6 pl-6 pr-4 shadow rounded bg-white">
+                                <span class="mb-4 inline-block p-3 rounded-lg bg-blue-400">
+                                    <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <h4 class="mb-2 text-2xl font-bold font-heading">Lorem ipsum dolor sit amet</h4>
+                                <p class="text-gray-500 leading-loose">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
                             </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
                         </div>
-
-                        <ul class="catalog-item__list">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1_2</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
+                        <div class="w-full md:w-1/2 lg:mt-20 px-4">
+                            <div class="mb-8 py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                                <span class="mb-4 inline-block p-3 rounded bg-blue-400">
+                                    <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <h4 class="mb-2 text-2xl font-bold font-heading">Lorem ipsum dolor sit amet</h4>
+                                <p class="text-gray-500 leading-loose">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
                             </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
+                            <div class="py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                                <span class="mb-4 inline-block p-3 rounded bg-blue-400">
+                                    <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                            clip-rule="evenodd"></path>
+                                        <path
+                                            d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <h4 class="mb-2 text-2xl font-bold font-heading">Lorem ipsum dolor sit amet</h4>
+                                <p class="text-gray-500 leading-loose">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
                             </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
                         </div>
-
-                        <ul class="catalog-item__list catalog-item__list_active">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
                     </div>
                 </div>
             </div>
-            <div class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT9</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
-                            </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar SA1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
-                            </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list catalog-item__list_active">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT3</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
-                            </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT8</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
-                            </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list catalog-item__list_active">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT12</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
-                            </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FdsT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном
-                                ритме
-                            </div>
-                            <a href="" class="catalog-item__link">подробнее</a>
-                        </div>
-
-                        <ul class="catalog-item__list catalog-item__list_active">
-                            <li class="catalog-item__list-item">Вы услышие звуковое оповещение о нужном пульсе во время
-                                тренировки;</li>
-                            <li class="catalog-item__list-item">Вы увидите инфомативный графический индикатор целевых
-                                тренировочных зон пульса;</li>
-                            <li class="catalog-item__list-item">Также Вы увидите информацию о расходе за тренировку;
-                            </li>
-                            <li class="catalog-item__list-item">Вы сможете посмотреть данные по 10.</li>
-
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
-
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 руб.</div>
-                            <div class="catalog-item__price">4500</div>
-                        </div>
-                        <button class="button button_mini">купить</button>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="skew skew-bottom mr-for-radius">
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+            </svg>
+        </div>
+        <div class="skew skew-bottom ml-for-radius">
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+            </svg>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer__map">
-            <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A806da62a089d86bc487e1104a3aebc056bab5bbc730a3df517bb67f32d3ea84c&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false">
-            </script>
-        </div>
-        <div class="footer__info">
-            <address class="footer__addr">Полоцк, ул. Суворова, д.18А</address>
-            <a href="tel:8888888888" class="footer__phone"> 8 888 888 88 </a>
-            <div class="footer__social">
-                <a href="" class="footer__social-item"><img src="icons/facebook.svg" alt="facebok"></a>
-                <a href="" class="footer__social-item"><img src="icons/instagram.svg" alt="inst"></a>
-                <a href="" class="footer__social-item"><img src="icons/pinterest.svg" alt="vk"></a>
-            </div>
-        </div>
-    </footer>
-
-    <div class="overlay">
-        <div class="modal" id="consultation">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Просто заполните форму</div>
-            <div class="modal__descr">и мы перезвоним Вам в течении 10 минут</div>
-            <form class="feed-form feed-form_mt25" action="#" method="GET">
-
-                <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон">
-                <input name="email" placeholder="Ваш E-mail" type="email">
-
-                <button data-modal="consultation" class="button button_submit">заказать консультацию</button>
-            </form>
-        </div>
-        <div class="modal" id="order">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Ваш заказ</div>
-            <div class="modal__descr">Пульсометр</div>
-            <form class="feed-form feed-form_mt25" action="#" method="GET">
-
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-
-                <button class="button button_submit">Купить</button>
-            </form>
-        </div>
-        <div class="modal modal_mini" id="thanks">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Спасибо за Вашу заявку!</div>
-            <div class="modal__descr">Наши менеджеры свяжутся с Вами</div>
-        </div>
-
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jQuery-validate.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/upload.js"></script>
+    <script src='js/script.js'>
+    </script>
 </body>
 
 </html>
