@@ -60,17 +60,16 @@
         </nav>
         <div class="bg-gray-50 pt-12 lg:pt-20 pb-20 radius-for-skewed">
             <div class="container mx-auto px-4">
-                <div class="flex flex-wrap -mx-4">
+                <div class="flex flex-wrap mx-4">
                     <div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
                         <div class="w-full text-center lg:text-left">
                             <div class="max-w-md mx-auto lg:mx-0">
                                 <h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading">
-                                    <span>Header</span><span class="text-blue-600">1</span>
+                                    <span>AI spare parts</span> <span class="text-blue-600">recognition</span>
                                 </h2>
                             </div>
                             <div class="max-w-sm mx-auto lg:mx-0">
-                                <p class="mb-6 text-gray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+                                <p class="mb-6 text-gray-400 leading-loose uppercase">demo-service</p>
                                 <div>
                                     <a class="btn-h1 w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded transition duration-200"
                                         href="#">How it works</a>
@@ -84,21 +83,15 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
-                        <div class="relative" style="z-index: 0;">
+                        <div class="relative" style="z-index: 0; width: 100%;">
 
                             <!--основное изображение тут-->
                             <div class="img-ocr">
                                 <!-- <img class="" src="img/Details.png" alt=""> -->
 
-                                <canvas class="dropzone d-none" id="canvas1"></canvas>
-                                <!-- <button class="input-file cursor-pointer">
-                                        <input class="cursor-pointer" type="file" multiple="false" id="imageOCR"
-                                            onchange="upload()">
-                                        <span class="cursor-pointer">
-                                            Choose file...
-                                        </span>
-                                    </button> -->
-                                <div class="drag-and-drop">
+                                <!-- <canvas class="dropzone d-none" id="canvas1"></canvas> -->
+                                <img src="" alt="" class="dropzone d-none" id="canvas1" >
+                                <div class="drag-and-drop" id="drag-and-drop">
                                     <div class="space-y-1 text-center">
                                         <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
                                             viewBox="0 0 48 48" aria-hidden="true">
@@ -213,9 +206,8 @@
                 <div class="flex flex-wrap items-center">
                     <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
                         <div class="max-w-md lg:mx-auto">
-                            <h2 class="my-2 text-4xl lg:text-5xl font-bold font-heading">Header 2</h2>
-                            <p class="mb-6 text-gray-500 leading-loose">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+                            <h2 class="my-2 text-4xl lg:text-5xl font-bold font-heading">How does it work?</h2>
+                            <p class="mb-6 text-gray-500 leading-loose">Watch the demo-video to know</p>
                             <ul class="text-gray-500 font-bold">
                                 <li class="flex mb-4">
                                     <svg class="mr-2 w-6 h-6 text-blue-400" xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +242,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w-full lg:w-1/2 flex flex-wrap -mx-4">
+                    <div class="w-full lg:w-1/2 flex flex-wrap md:-mx-4">
                         <div class="mb-8 lg:mb-0 w-full md:w-1/2 px-4">
                             <div class="mb-8 py-6 pl-6 pr-4 shadow rounded bg-white">
                                 <span class="mb-4 inline-block p-3 rounded-lg bg-blue-400">
