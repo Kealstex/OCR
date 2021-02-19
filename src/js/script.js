@@ -4,12 +4,22 @@ function showMenu() {
 }
 
 function upload() {
-    var imgcanvas = document.getElementById("canvas1");
-    imgcanvas.classList.toggle("d-none");
-    alert(imgcanvas);
+    var image = document.getElementById("canvas1");
     var fileinput = document.getElementById("imageOCR");
-    alert(fileinput);
-    var image = new SimpleImage(fileinput);
-    image.drawTo(imgcanvas);
-    //alert("Upload image " + filename);
+    var dnd = document.getElementById("drag-and-drop");
+    image.classList.remove("d-none");
+    image.src = URL.createObjectURL(fileinput.files[0]);
+    dnd.classList.add("d-none");
+}
+
+function urlUpload() {
+    var url = document.getElementById("start").value;
+    console.log(url.length);
+    if (url.length > 0) {
+        var image = document.getElementById("canvas1");
+        var dnd = document.getElementById("drag-and-drop");
+        image.src = url;
+        image.classList.remove("d-none");
+        dnd.classList.add("d-none");
+    }
 }
