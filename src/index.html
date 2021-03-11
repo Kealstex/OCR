@@ -74,7 +74,10 @@
                     </div>
                     <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
                         <div class="relative" style="z-index: 0; width: 100%;">
-
+                            <button id="btnRestart"
+                                class="uppercase p-3 flex items-center border border-blue-600 max-w-max shadow-sm hover:shadow-lg rounded-full w-12 h-12 d-none" onclick="restart()">
+                                <img src="img/restart.svg" class="text-blue-600" onclick="">
+                            </button>
                             <div class="img-ocr">
                                 <!--основное изображение тут, src пропишется через upload()-->
                                 <img src="" alt="" class="dropzone d-none" id="canvas1">
@@ -151,14 +154,15 @@
             <nav
                 class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
                 <div class="flex items-center mb-8">
-                    <a class="mr-auto text-3xl font-bold leading-none" href="#">                        
-                    <button class="navbar-close" onclick="showMenu()">
-                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                        <button class="navbar-close" onclick="showMenu()">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
                 </div>
                 <div>
                     <ul>
