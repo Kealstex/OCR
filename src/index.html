@@ -78,6 +78,7 @@
                             <div class="img-ocr">
                                 <!--основное изображение тут, src пропишется через upload()-->
                                 <img src="" alt="" class="dropzone d-none" id="canvas1">
+
                                 <div class="drag-and-drop" id="drag-and-drop">
                                     <div class="space-y-1 text-center">
                                         <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
@@ -107,7 +108,7 @@
                                                 <input type="text" id="start"
                                                     class="focus:ring-indigo-500 focus:border-indigo-500 p-1 flex-1 block w-full rounded-none sm:text-sm border border-gray-300"
                                                     placeholder="www.example.com">
-                                                    <button
+                                                <button
                                                     class="inline-flex items-center px-3 rounded-r-md border border-l-0 border-purple-700 bg-purple-600 text-white text-lg"
                                                     onclick="urlUpload()">
                                                     START
@@ -119,6 +120,11 @@
                                         </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div id="hint"
+                                class="bg-teal-lightest border-t-4 border-teal rounded-b text-teal-darkest px-4 py-3 shadow-md my-2 d-none"
+                                role="alert">
+
                             </div>
 
                             <!--фон-->
@@ -145,8 +151,7 @@
             <nav
                 class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
                 <div class="flex items-center mb-8">
-                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
-                        <img class="h-10" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto"></a>
+                    <a class="mr-auto text-3xl font-bold leading-none" href="#">                        
                     <button class="navbar-close" onclick="showMenu()">
                         <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -158,13 +163,14 @@
                 <div>
                     <ul>
                         <li class="mb-1"><a class="block p-4 text-sm" href="#" onclick="showMenu()">Get Started</a></li>
-                        <li class="mb-1"><a class="block p-4 text-sm" href="#howItWorks" onclick="showMenu()">How it works</a></li>
+                        <li class="mb-1"><a class="block p-4 text-sm" href="#howItWorks" onclick="showMenu()">How it
+                                works</a></li>
                     </ul>
                 </div>
                 <div class="mt-auto">
                     <div class="pt-6">
                         <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 rounded-l-xl rounded-t-xl"
-                        href="mailto:info@corpitech.by">Contact us</a>
+                            href="mailto:info@corpitech.by">Contact us</a>
                     </div>
                     <p class="my-4 text-xs text-center text-gray-400">
                         <span>© 2021 All rights reserved.</span>

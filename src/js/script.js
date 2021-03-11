@@ -10,6 +10,9 @@ function upload() {
     image.classList.remove("d-none");
     image.src = URL.createObjectURL(fileinput.files[0]);
     dnd.classList.add("d-none");
+    var hint = document.getElementById("hint");
+    hint.classList.remove("d-none");
+    hint.innerHTML = "Files upload!";
 }
 
 function urlUpload() {
